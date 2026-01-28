@@ -15,6 +15,7 @@
 import importlib
 import logging
 import os
+import verl.utils.distributed_backend
 
 from packaging.version import parse as parse_version
 

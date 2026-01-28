@@ -15,12 +15,12 @@
 e2e test verl.single_controller.ray
 """
 
-import ray
 import torch
 
 from verl.single_controller.base.decorator import Dispatch, Execute, collect_all_to_all, register
 from verl.single_controller.base.worker import Worker
 from verl.single_controller.ray.base import RayClassWithInitArgs, RayResourcePool, RayWorkerGroup
+import ray
 
 
 def two_to_all_dispatch_fn(worker_group, *args, **kwargs):

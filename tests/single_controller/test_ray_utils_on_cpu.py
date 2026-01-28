@@ -13,9 +13,9 @@
 # limitations under the License.
 
 import pytest
-import ray
 
 from verl.utils.ray_utils import parallel_put
+import ray
 
 
 # Initialize Ray for testing if not already done globally

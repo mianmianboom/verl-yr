@@ -14,7 +14,6 @@
 
 import os
 
-import ray
 import torch
 
 from verl import DataProto
@@ -26,6 +25,7 @@ from verl.single_controller.ray.base import (
     RayWorkerGroup,
     split_resource_pool,
 )
+import ray
 
 
 @ray.remote

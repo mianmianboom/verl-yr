@@ -15,7 +15,6 @@
 In this test, we instantiate a data parallel worker with 8 GPUs
 """
 
-import ray
 import tensordict
 import torch
 from codetiming import Timer
@@ -27,6 +26,7 @@ from verl.single_controller.base import Worker
 from verl.single_controller.base.decorator import Dispatch, register
 from verl.single_controller.ray import RayClassWithInitArgs, RayResourcePool, RayWorkerGroup
 from verl.utils.ray_utils import parallel_put
+import ray
 
 
 @ray.remote

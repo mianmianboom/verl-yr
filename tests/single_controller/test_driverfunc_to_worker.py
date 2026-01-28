@@ -14,7 +14,6 @@
 
 import os
 
-import ray
 import torch
 from tensordict import TensorDict
 
@@ -22,6 +21,7 @@ from verl import DataProto
 from verl.single_controller.base.worker import Worker
 from verl.single_controller.ray import RayWorkerGroup
 from verl.single_controller.ray.base import RayClassWithInitArgs, RayResourcePool
+import ray
 
 os.environ["RAY_DEDUP_LOGS"] = "0"
 os.environ["NCCL_DEBUG"] = "WARN"

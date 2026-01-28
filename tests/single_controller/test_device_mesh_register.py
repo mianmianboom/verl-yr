@@ -14,7 +14,6 @@
 
 
 import numpy as np
-import ray
 import torch
 from tensordict import TensorDict
 
@@ -22,6 +21,7 @@ import verl.utils.tensordict_utils as tu
 from verl import DataProto
 from verl.single_controller.base import Worker
 from verl.single_controller.base.decorator import make_nd_compute_dataproto_dispatch_fn, register
+import ray
 
 
 @ray.remote
